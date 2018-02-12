@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1, h2, h3{
+    font-family: 'Marck Script', cursive;
+}
+h1{
+    font-size: 3em;
+    font-style: normal;
+}
+nav a{
+    text-decoration: none;
+}
+body > header nav a{
+    /*color: red;*/
+}
+body > header, body > footer{
+    color: #fff;
+    background: #000;
+}
+
+/* entête */
+#entete{
+    display: flex;
+    padding: 15px;
+}
+#entete figure{
+    margin: 0;
+    padding: 0;
+}
+#entete ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    padding:0;
+}
+#entete li a{
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    line-height: 40px;
+    height: 40px;
+    transition: all 1.5s ease;
+}
+#entete li a:hover{
+    background: darkgray;
+    color: #000;
+}
+/* zone de contenu */
+section{
+    padding: 15px;
+    display: flex;
+}
+section > *{
+    width: 50%;
+}
+section > figure{
+    margin: 0;
+}
+section > main h1:first-child{
+    margin-top: 0;
+}
+section main p{
+    line-height: 2em;
+}
+section iframe{
+    max-width: 100%;
+}
+section blockquote{
+    border-radius: 10px;
+    box-shadow: 0 0 20px #333;
+    padding: 15px;
+    line-height: 2em;
+}
+.bouton{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    background: #febbbb;
+    background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 45%, #ff5c5c 100%);
+    background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+    background: linear-gradient(to bottom, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 );
+}
+/* pied de page */
+
+body > footer{
+    padding: 15px;
+    text-align: center;
+}
